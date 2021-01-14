@@ -6,17 +6,23 @@ import java.sql.SQLException;
 public class Conexion {
 
     Connection conexion = null;
+    private static final String driver="com.mysql.jdbc.Driver";
+    private static final String user="root";
+    private static final String password="";
+    private static final String url="jdbc:mysql://localhost:3306/lugarTuristico";
+
     public Connection abrirConexion() {
 
 
         try {
-            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-            String connectionUrl = "jdbc:sqlserver://DESKTOP-ADTDP02:1433;database=lugarTuristico;integratedSecurity=true;";
-            conexion = DriverManager.getConnection(connectionUrl);
-            System.out.println("Conectado.");
+            Class.forName(driver);
+            conexion = DriverManager.getConnection(url, user, password);
+            if (conexion != null) {
+                System.out.println("Conectado!!");
+            }
         }
         catch (SQLException | ClassNotFoundException ex) {
-            System.out.println("Error.");
+            System.out.println("Error " + ex);
         }
         return conexion;
     }
