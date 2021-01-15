@@ -1,3 +1,5 @@
+package ec.edu.epn;
+
 import java.sql.PreparedStatement;
 
 public class Calificacion {
@@ -14,7 +16,7 @@ public class Calificacion {
 
             int registro = pt.executeUpdate();
             if(registro > 0){
-                System.out.println("Calificacion registrada con éxito");
+                System.out.println("ec.edu.epn.Calificacion registrada con éxito");
                 conexion.cerrarConexion();
             }
             else {

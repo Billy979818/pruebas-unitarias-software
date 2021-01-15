@@ -1,3 +1,5 @@
+package ec.edu.epn;
+
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
@@ -18,11 +20,11 @@ public class Administrador {
 
             int registro = pt.executeUpdate();
             if(registro > 0){
-                System.out.println("Administrador registrado con éxito");
+                System.out.println("ec.edu.epn.Administrador registrado con éxito");
                 conexion.cerrarConexion();
             }
             else {
-                System.out.println("No se pudo registrar el Administrador");
+                System.out.println("No se pudo registrar el ec.edu.epn.Administrador");
                 conexion.cerrarConexion();
             }
             return true;

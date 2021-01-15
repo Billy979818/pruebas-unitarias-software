@@ -1,3 +1,6 @@
+package ec.edu.epn;
+
+import ec.edu.epn.Categoria;
 import org.junit.Test;
 
 import java.sql.SQLException;

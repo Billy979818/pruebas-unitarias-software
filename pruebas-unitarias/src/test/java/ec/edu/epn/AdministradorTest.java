@@ -1,4 +1,8 @@
+package ec.edu.epn;
+
+import ec.edu.epn.Administrador;
 import org.junit.Test;
+
 
 import java.sql.SQLException;
 

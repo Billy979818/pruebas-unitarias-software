@@ -1,4 +1,5 @@
-import java.sql.Connection;
+package ec.edu.epn;
+
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
@@ -17,7 +18,7 @@ public class Categoria {
 
             int registro = pt.executeUpdate();
             if(registro > 0){
-                System.out.println("Categoria registrada con éxito");
+                System.out.println("ec.edu.epn.Categoria registrada con éxito");
                 conexion.cerrarConexion();
             }
             else {

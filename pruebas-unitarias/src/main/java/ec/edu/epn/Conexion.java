@@ -1,3 +1,5 @@
+package ec.edu.epn;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -30,7 +32,7 @@ public class Conexion {
     public void cerrarConexion() {
         try {
             conexion.close();
-            System.out.println("Conexion cerrada con éxito");
+            System.out.println("ec.edu.epn.Conexion cerrada con éxito");
         }catch (SQLException  sqle) {
             System.out.println(sqle);
         }

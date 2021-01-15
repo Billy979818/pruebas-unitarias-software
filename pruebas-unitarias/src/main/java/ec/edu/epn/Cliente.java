@@ -1,3 +1,5 @@
+package ec.edu.epn;
+
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
